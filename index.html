@@ -1,0 +1,29 @@
+<head>
+
+<title>Welcome</title>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css') }}">
+</head>
+
+<body>
+<form action="/calcbmi" method = "GET">
+<p>Please submit your name, height and weight.</p>
+<br>
+<div>
+<label for='name'>Name</label>
+<input type='text' id='name' name='name'>
+<br>
+<label for='weight'>Weight (kg)</label>
+<input type='number' id='weight' name='weight'>
+<br>
+<label for='height'>Height (m)</label>
+<input type='text' id='height' name='height'>
+<br>
+<label for='comments'>Comments</label>
+<br>
+<textarea id='comments' name='comments' rows='10' cols='30'>
+</textarea>
+</div>
+<input type='submit' id='submit' name='submit'>
+</form>
+
+</body>
